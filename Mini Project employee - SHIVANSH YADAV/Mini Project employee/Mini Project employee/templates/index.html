@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Navigation Bar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #0f172a, #0b1220);
+      color: #fff;
+      padding: 0.6rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .company {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.2px
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #06b6d4, #7c3aed);
+      display: inline-block;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: .5rem;
+      align-items: center
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: .5rem .75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      transition: all .18s ease;
+    }
+
+    .nav-links a:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 255, 255, 0.05)
+    }
+
+    .dashboard {
+      background: linear-gradient(90deg, #06b6d4, #7c3aed);
+      color: #071029;
+      padding: .4rem .75rem;
+      border-radius: 8px;
+      font-weight: 700
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="company">
+      <span class="logo"></span>
+      <span>welcome to employee reocrds</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#dashboard" class="dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+</body>
+
+</html>
