@@ -1,0 +1,8 @@
+
+<h1>Welcome, {{ session.username }}!</h1>
+<p>This is your dashboard.</p>
+<ul>
+  <li><a href="{{ url_for('home') }}">Home</a></li>
+  <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+  <li><a href="{{ url_for('about') }}">About Me</a></li>
+</ul>
